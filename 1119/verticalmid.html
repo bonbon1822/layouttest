@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 400px;
+            background-color: bisque;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+        }
+        .box::before{
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+        .box .content {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <h3>123</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam iure assumenda, placeat ex, iste sunt perspiciatis ipsam adipisci sed unde expedita numquam temporibus vitae autem, quibusdam ab aspernatur eius tenetur.
+            </p>
+            <a href="#">more....</a>
+        </div>
+        
+    </div>
+</body>
+</html>
