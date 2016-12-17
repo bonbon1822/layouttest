@@ -1,0 +1,43 @@
+
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+        * {
+            font-family: "Open Sans", "Noto Sans TC";
+            /*            box-sizing: border-box;*/
+        }
+        
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        img {
+            width: 100%;
+            border: 0;
+            vertical-align: top;
+        }
+        
+        .primary {
+            background-color: crimson;
+            color: aliceblue;
+            /*            主要的顏色*/
+        }
+        
+        .full-width {
+            width: 100%;
+            /*            滿版高度*/
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+            /*            把垂直的物件變成水平*/
+        }

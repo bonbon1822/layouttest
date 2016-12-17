@@ -1,0 +1,259 @@
+ @media screen and (min-width:960px){
+    fixed-width{
+        width: 100%;
+    }
+     
+        .fixed-width {
+            width: 1200px;
+            margin: auto;
+            /*            固定寬度 用可以被3整除的數字 960/1200*/
+        }
+        
+        .col-4 {
+            width: 225px;
+            margin: 20px;
+            float: left;
+            padding: 15px;
+            /*            欄位多寡 名稱可以自己改 寬度也可以自己改*/
+        }
+        
+        .col-2 {
+            width: 50%;
+            float: left;
+        }
+        
+        nav .logo {
+            float: left;
+            width: 150px;
+            height: 100px;
+            background-color: #fff;
+        }
+        
+        nav .menu {
+            float: right;
+        }
+        
+        nav .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav .menu li {
+            float: left;
+            list-style: none;
+        }
+        
+        nav .menu a {
+            display: block;
+            line-height: 100px;
+            margin-left: 30px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        header {
+            background-image: url(FLOWER/medium_8ZR1xyVbOj88ec-JWVKc0K8DpXwiRPr3-KEqLXhfsfY.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding-top: 280px;
+            padding-bottom: 280px;
+            text-align: center;
+            color: #fff;
+            /*            height: 600px;*/
+        }
+        
+        header .content h1 {
+            font-size: 110px;
+            letter-spacing: 4px;
+        }
+        
+        header .content p {
+            letter-spacing: 2em;
+        }
+        
+        #about .title h2 {
+            text-align: center;
+            padding-top: 150px;
+            padding-bottom: 180px;
+            font-size: 32px;
+            letter-spacing: 5px;
+            position: relative;
+        }
+        
+        #about .title h2::before {
+            content: "A";
+            position: absolute;
+            display: block;
+            width: 100%;
+            font-size: 160px;
+            top: 50px;
+            /*            因為用絕對定位他會變成定整個頁面的位子，所以要去上面h2改成相對定位*/
+            color: rgba(255, 255, 255, .15)
+        }
+        
+        #about .col-4 {
+            text-align: center;
+        }
+        
+        #about .col-4 h3 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        #about .col-4 p {
+            text-align: justify;
+            font-size: 13px;
+            padding-bottom: 30px;
+            color: rgba(255, 255, 255, .6)
+        }
+        
+        #about .icon {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(255, 255, 255, .08);
+            display: inline-block;
+            line-height: 165px;
+            border-radius: 75px;
+            border: rgba(255, 255, 255, .1) 2px solid;
+        }
+        
+        #service .col-2 {
+            height: 400px;
+        }
+        
+        #service .wrapper:nth-of-type(1) .col-2:nth-of-type(1) {
+            background-color: #111;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+        }
+        
+        #service .wrapper:nth-of-type(1) .col-2:nth-of-type(1) .content {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            padding-left: 100px;
+            padding-right: 20px;
+        }
+        
+        #service .wrapper .content h4 {
+            border-left: 5px solid crimson;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        #service .wrapper:nth-of-type(1) .col-2:nth-of-type(1)::before {
+            content: "";
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        /*        要做一個虛擬的東西去讓他對齊,所以所有東西都要垂直致中
+        01. 在父屬性上面做呈線內區塊 還有垂直致中
+        02. 在子屬性上面做線內區塊 還有垂直致中
+        03. 創一個虛擬元素然後做垂直100% 線內區塊 還有垂直致中
+        04. 重新整理後字會不見所以要在父元素上面把font-size歸零 然後在子屬性上面恢復文字尺寸*/
+        
+        #service .wrapper:nth-of-type(1) .col-2:nth-of-type(2) {
+            background-image: url(FLOWER/medium_clNVKiJXJ71Y9MOXtzQef4tBdLP9stfHWohrio_ppsU.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #service .wrapper:nth-of-type(2) .col-2:nth-of-type(1) {
+            background-image: url(FLOWER/medium_tMRKRpzfB4iqo8CuXruB896whJGSqgAIuIrngSN1-bQ.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #service .wrapper:nth-of-type(2) .col-2:nth-of-type(2) {
+            background-color: #848484;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+        }
+        
+        #service .wrapper:nth-of-type(2) .col-2:nth-of-type(2) .content {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            padding-left: 50px;
+            padding-right: 100px;
+        }
+        
+        #service .wrapper:nth-of-type(2) .col-2:nth-of-type(2) .content h5 {
+            border-left: 5px solid crimson;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        #service .wrapper:nth-of-type(2) .col-2:nth-of-type(2)::before {
+            content: "";
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        #service .wrapper a {
+            margin-top: 25px;
+            display: block;
+            color: crimson;
+            text-decoration: none;
+            border: 1px solid;
+        }
+        
+        #service .wrapper .more {
+            padding: 10px;
+            display: inline-block;
+            width: auto;
+        }
+        /*        因為指定性很強所以會蓋過所有的東西,就要在重新指定一次說哪個東西要取消block*/
+        /*        可以用括號選取第一個的第一塊還是第二個的第二塊*/
+        
+        #modern .title {
+            text-align: center;
+            padding-top: 150px;
+            padding-bottom: 180px;
+            letter-spacing: 5px;
+            position: relative;
+        }
+        
+        #modern h2 {
+            font-size: 32px;
+        }
+        
+        #modern .fixed-width:nth-of-type(1)p {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        
+        #modern .fixed-width p {
+            text-align: center;
+        }
+        
+        #modern h3 {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        #modern .col-4 {
+            text-align: center;
+        }
+        /*        怪怪?*/
+        
+        footer {
+            background-color: #222;
+            color: #bbb;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            letter-spacing: 1.5px;
+            font-size: 14px;
+        }
